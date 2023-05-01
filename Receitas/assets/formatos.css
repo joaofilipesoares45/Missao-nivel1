@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
+
+@keyframes button-animation {
+    to {
+        color: #ff7f27;
+        background-color: aliceblue;
+    }
+}
+
+@keyframes animation {
+    0% {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+        border-radius: 0;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+}
+
+@keyframes div-lista-ingredientes1 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 130px;
+    }
+}
+
+@keyframes div-lista-ingredientes2 {
+    from {
+        height: 130px;
+    }
+
+    to {
+        height: 0px;
+    }
+}
+
+:root {
+    --input-animation: animation;
+    --button-animation: button-animation;
+    --lista-animation1: div-lista-ingredientes1;
+    --lista-animation2: div-lista-ingredientes2;
+    --primary-color: #ff7f27;
+    --primary-font: "Open Sans", sans-serif;
+    --secundary-font: "Playfair Display", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#barra-horizontal {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#menu a {
+    font-family: var(--primary-font);
+    padding: 30px;
+    font-size: x-large;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#menu a:hover {
+    background-color: aliceblue;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#titulo-home {
+    margin: 13%;
+    padding: 30px;
+}
+
+#titulo-home h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-family: var(--secundary-font);
+    font-size: 40px;
+}
+
+#titulo-home p {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: x-large;
+    font-family: var(--secundary-font);
+}
+
+#sessao-receitas {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#sessao-receitas h1 {
+    font-size: x-large;
+    font-family: var(--secundary-font);
+    margin: 10px;
+}
+
+#tela-receitas {
+    width: 1300px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+
+#tela-receitas div p {
+    font-size: medium;
+    font-weight: bold;
+    margin: 10px;
+    font-family: var(--primary-font);
+}
+
+#tela-receitas img {
+    width: 375px;
+    height: 275px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.lista-ingredientes>li {
+    margin-left: 10px;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+.lista-ingredientes {
+    height: 130px;
+    margin: 10px;
+    background-color: #fcfcfc00;
+}
+
+/* .div-receitas:hover .lista-ingredientes {
+    animation: var(--lista-animation1);
+    animation-duration: 0.8s;
+}
+
+.div-receitas:hover::after .lista-ingredientes li {
+    animation: var(--lista-animation2);
+    animation-duration: 0.8s;
+}
+
+.div-receitas:hover .lista-ingredientes {
+    display: block;
+}
+
+.lista-ingredientes:hover {
+    display: block;
+} */
+
+#conteiner-cadastro {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+#formulario-cadastro {
+    padding: 20px;
+    width: 40%;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+
+#formulario-cadastro label {
+    margin-right: 90%;
+    display: block;
+    font-size: small;
+}
+
+#formulario-cadastro input {
+    margin-bottom: 10px;
+    margin-top: 2px;
+    width: 100%;
+    font-family: var(--primary-font);
+    height: 30px;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+#formulario-cadastro input:hover {
+    background-color: rgb(203, 231, 255);
+}
+
+#formulario-cadastro h1 {
+    margin-bottom: 20px;
+}
+#criar-conta {
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 385px;
+    color: aliceblue;
+    background-color: #ff7f27;
+}
+
+#criar-conta:hover {
+    animation-name: var(--button-animation);
+    animation-duration: 1s;
+}
+
+#hall {
+    background-color: aliceblue;
+    width: 66%;
+    font-family: var(--secundary-font);
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-home-cadastro h1 {
+    margin-top: 250px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-home-cadastro p {
+    font-size: medium;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    visibility: visible;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
